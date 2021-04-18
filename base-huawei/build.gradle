@@ -23,11 +23,11 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 30
     }
 }
 
@@ -36,7 +36,7 @@ dependencies {
 
     implementation 'com.huawei.hms:base:5.0.0.300'
 
-    implementation 'androidx.lifecycle:lifecycle-runtime:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-runtime:2.3.1'
 }
 
 apply from: 'publish.gradle'
