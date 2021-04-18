@@ -15,6 +15,16 @@
  */
 
 tasks.withType(Javadoc) {
-    title = POM_NAME + " " + POM_VERSION + " API"
+    title = POM_NAME + " " + VERSION_NAME + " API"
     options.addBooleanOption 'Xdoclint:none', true
 }
+
+ext {
+    POM_ARTIFACT_ID="base-core"
+    POM_NAME="Android Kits Base (Core)"
+    POM_DESCRIPTION="Base APIs for libraries in Android Kits collections."
+
+    VERSION_NAME="1.0.0"
+}
+
+apply plugin: 'com.vanniktech.maven.publish'
