@@ -14,4 +14,24 @@
  * limitations under the License.
  */
 
-include ':base-core', ':base-google', ':base-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.tasks.listeners;
+
+import androidx.annotation.NonNull;
+
+import dev.supasintatiyanupanwong.libraries.android.kits.tasks.Task;
+
+/**
+ * Interface definition for a callback to be invoked when a {@link Task} fails with an exception.
+ *
+ * @since 1.0.0
+ */
+public interface OnFailureListener {
+
+    /**
+     * Called when the {@link Task} fails with an exception.
+     *
+     * @param exception the exception that caused the {@link Task} to fail. Never null.
+     */
+    void onFailure(@NonNull Exception exception);
+
+}

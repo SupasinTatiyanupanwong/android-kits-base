@@ -14,4 +14,24 @@
  * limitations under the License.
  */
 
-include ':base-core', ':base-google', ':base-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.tasks.listeners;
+
+import androidx.annotation.Nullable;
+
+import dev.supasintatiyanupanwong.libraries.android.kits.tasks.Task;
+
+/**
+ * Interface definition for a callback to be invoked when a {@link Task} completes successfully.
+ *
+ * @since 1.0.0
+ */
+public interface OnSuccessListener<Result> {
+
+    /**
+     * Called when the {@link Task} completes successfully.
+     *
+     * @param result the result of the {@link Task}.
+     */
+    void onSuccess(@Nullable Result result);
+
+}

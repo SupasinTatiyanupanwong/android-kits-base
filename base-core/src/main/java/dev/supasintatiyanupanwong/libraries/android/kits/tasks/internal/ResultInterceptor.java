@@ -14,4 +14,19 @@
  * limitations under the License.
  */
 
-include ':base-core', ':base-google', ':base-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.tasks.internal;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.RestrictTo;
+
+import static androidx.annotation.RestrictTo.Scope.LIBRARY_GROUP_PREFIX;
+
+/**
+ * @since 1.0.0
+ */
+@RestrictTo(LIBRARY_GROUP_PREFIX)
+public abstract class ResultInterceptor<RawResult, Result> {
+
+    public abstract @Nullable Result intercept(@Nullable RawResult result);
+
+}

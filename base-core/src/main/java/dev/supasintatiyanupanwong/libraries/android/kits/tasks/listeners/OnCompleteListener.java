@@ -14,4 +14,24 @@
  * limitations under the License.
  */
 
-include ':base-core', ':base-google', ':base-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.tasks.listeners;
+
+import androidx.annotation.NonNull;
+
+import dev.supasintatiyanupanwong.libraries.android.kits.tasks.Task;
+
+/**
+ * Interface definition for a callback to be invoked when a {@link Task} completes.
+ *
+ * @since 1.0.0
+ */
+public interface OnCompleteListener<Result> {
+
+    /**
+     * Called when the {@link Task} completes.
+     *
+     * @param task the completed {@link Task}. Never null.
+     */
+    void onComplete(@NonNull Task<Result> task);
+
+}

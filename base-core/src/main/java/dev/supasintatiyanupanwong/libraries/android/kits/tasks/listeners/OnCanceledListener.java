@@ -14,4 +14,20 @@
  * limitations under the License.
  */
 
-include ':base-core', ':base-google', ':base-huawei'
+package dev.supasintatiyanupanwong.libraries.android.kits.tasks.listeners;
+
+import dev.supasintatiyanupanwong.libraries.android.kits.tasks.Task;
+
+/**
+ * Interface definition for a callback to be invoked when a {@link Task} is canceled.
+ *
+ * @since 1.0.0
+ */
+public interface OnCanceledListener {
+
+    /**
+     * Called when the {@link Task} is canceled successfully.
+     */
+    void onCanceled();
+
+}
