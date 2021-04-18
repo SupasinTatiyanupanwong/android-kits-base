@@ -15,4 +15,4 @@
   ~ limitations under the License.
 -->
 
-<manifest package="me.tatiyanupanwong.supasin.android.libraries.kits.base" />
+<manifest package="dev.supasintatiyanupanwong.libraries.android.kits.base" />
